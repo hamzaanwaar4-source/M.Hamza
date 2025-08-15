@@ -4,7 +4,7 @@ This repository contains the source code for the personal 3D portfolio of **M Ha
 
 Live site: [https://m-hamza.com/](https://m-hamza.com/) (Update this with your final link)
 
-![Portfolio Preview](public/images/preview1.png)
+![Portfolio Preview](public/images/portfolio-preview.png)
 
 ## Table of Contents
 
