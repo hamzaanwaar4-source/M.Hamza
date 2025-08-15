@@ -1,8 +1,8 @@
-# 3D Portfolio Website
+# M Hamza Anwaar — 3D Portfolio Website
 
-This repository contains the source code for a personal 3D portfolio built with React, TypeScript, Three.js, React Three Fiber, and GSAP. It includes animated page sections, a character scene, custom cursor interactions, and smooth transitions designed for a modern portfolio experience.
+This repository contains the source code for the personal 3D portfolio of **M Hamza Anwaar**, an AI & Back-End Developer. Built with React, TypeScript, Three.js, React Three Fiber, and GSAP.
 
-Live site: [https://akashrmalhotra.netlify.app/](https://akashrmalhotra.netlify.app/)
+Live site: [https://m-hamza.com/](https://m-hamza.com/) (Update this with your final link)
 
 ![Portfolio Preview](public/images/preview1.png)
 
@@ -173,4 +173,8 @@ You can adapt this portfolio to your own profile by updating the following areas
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+**Search Tags:**
+M Hamza Anwaar, AI Developer, Back-End Developer, Python Developer, Django Expert, FastAPI, RAG Pipelines, Agentic AI, 3D Portfolio, React Three Fiber, Three.js, GSAP Animations, Modern Web Portfolio.
