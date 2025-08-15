@@ -82,7 +82,7 @@ const SocialIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <HoverLinks text="HAMZA ANWAAR CV" />
+        <HoverLinks text="RESUME" />
         <span>
           <TbNotes />
         </span>
