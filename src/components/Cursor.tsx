@@ -48,7 +48,7 @@ const Cursor = () => {
     });
   }, []);
 
-  return <div className="cursor-main" ref={cursorRef}></div>;
+  return <div className="cursor-main no-mobile" ref={cursorRef}></div>;
 };
 
 export default Cursor;

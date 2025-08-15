@@ -81,6 +81,16 @@ div.resume-button span {
   width: 100%;
   z-index: 99999;
 }
+@media only screen and (max-width: 899px) {
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    bottom: 40px;
+    gap: 15px;
+  }
+}
+
 @media only screen and (min-width: 900px) {
   .social-icons {
     display: flex;
@@ -90,6 +100,17 @@ div.resume-button span {
     font-size: 28px;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .resume-button {
+    transform: none;
+    right: 0;
+    bottom: 40px;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .resume-button {
     transform: none;

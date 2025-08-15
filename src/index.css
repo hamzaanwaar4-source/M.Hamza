@@ -135,3 +135,13 @@ body {
     font-size: 40px;
   }
 }
+
+canvas {
+  touch-action: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .no-mobile {
+    display: none !important;
+  }
+}
