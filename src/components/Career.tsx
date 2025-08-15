@@ -34,7 +34,7 @@ const Career = () => {
               <h3>2024–25</h3>
             </div>
             <p>
-              Jan 2024 – Jan 2025. Built custom backend solutions and 
+              Jan 2024 – Jan 2025. Built custom backend solutions and
               AI integrations for clients globally using Python, Django,
               and FastAPI.
             </p>

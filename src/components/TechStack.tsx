@@ -16,7 +16,6 @@ const textureLoader = new THREE.TextureLoader();
 const techList = [
   { name: "Python", color: "#3776ab" },
   { name: "Django", color: "#092e20" },
-  { name: "DRF", color: "#a30000" },
   { name: "FastAPI", color: "#05998b" },
   { name: "WebSockets", color: "#010101" },
   { name: "Docker", color: "#2496ed" },
@@ -26,12 +25,10 @@ const techList = [
   { name: "Postman", color: "#ff6c37" },
   { name: "Swagger", color: "#85ea2d" },
   { name: "LangChain", color: "#1c3c3c" },
-  { name: "LlamaIndex", color: "#000000" },
   { name: "OpenAI", color: "#412991" },
   { name: "Claude", color: "#d97757" },
   { name: "RAG", color: "#2d3436" },
   { name: "Agents", color: "#6c5ce7" },
-  { name: "PyTorch", color: "#ee4c2c" },
   { name: "HuggingFace", color: "#ffd21e" },
   { name: "n8n", color: "#ff6d5a" },
   { name: "Make.com", color: "#6c5ce7" },
@@ -66,7 +63,7 @@ const createTextTexture = (text: string, color: string) => {
   context.textAlign = "center";
   context.textBaseline = "middle";
   context.fillStyle = "#ffffff";
-  
+
   // Wrap text
   const words = text.split(" ");
   if (words.length > 1) {
@@ -84,7 +81,7 @@ const createTextTexture = (text: string, color: string) => {
   return texture;
 };
 
-const sphereGeometry = new THREE.SphereGeometry(1, 48, 48);
+const sphereGeometry = new THREE.SphereGeometry(1, 14, 14);
 
 type SphereProps = {
   vec?: THREE.Vector3;
@@ -247,7 +244,8 @@ const TechStack = () => {
 
       <Canvas
         shadows
-        gl={{ alpha: true, stencil: false, depth: false, antialias: true }}
+        dpr={[1, 1.5]}
+        gl={{ alpha: true, stencil: false, antialias: false, powerPreference: "high-performance" }}
         camera={{ position: [0, 2, 25], fov: 35, near: 1, far: 100 }}
         onCreated={(state) => (state.gl.toneMappingExposure = 1.2)}
         className="tech-canvas"

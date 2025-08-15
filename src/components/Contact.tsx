@@ -32,7 +32,7 @@ const Contact = () => {
               GitHub <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com/in/m-hamza-anwar-007982222?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              href="https://www.linkedin.com/in/m-hamza-anwar-007982222"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
@@ -43,10 +43,10 @@ const Contact = () => {
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>M Hamza</span>
+              Designed and Developed <br /> by <span>M Hamza Anwaar</span>
             </h2>
             <h5>
-              <MdCopyright /> 2026
+              <MdCopyright /> 2025
             </h5>
           </div>
         </div>
