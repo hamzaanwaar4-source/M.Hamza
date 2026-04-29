@@ -6,13 +6,12 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          I'm M Hamza Anwaar, an AI & Back-End Developer with 1.5+ years of experience
-          building intelligent systems and scalable software. I specialise in
-          Python, Django, and FastAPI — crafting clean, production-ready APIs
-          and AI pipelines that solve real business problems. I've delivered 10+
-          projects for clients across Europe and the Middle East, and currently
-          work full-time at Artificizen while staying open to exciting
-          opportunities worldwide.
+          I'm Muhammad Hamza Anwaar, a Backend Engineer specializing in AI & Voice
+          Automation with 14+ months of production experience. I build scalable REST APIs,
+          AI pipelines, and distributed systems using Python, FastAPI, and Django.
+          I've shipped 12+ production endpoints and a real-time Workday HR voice bot.
+          My expertise includes LangChain, vector databases (Pinecone/Chroma), and
+          RAG pipelines, focused on delivering high-impact autonomous solutions.
         </p>
       </div>
     </div>
