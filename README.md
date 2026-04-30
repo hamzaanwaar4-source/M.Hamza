@@ -2,7 +2,7 @@
 
 This repository contains the source code for the personal 3D portfolio of **M Hamza Anwaar**, an AI & Back-End Developer. Built with React, TypeScript, Three.js, React Three Fiber, and GSAP.
 
-Live site: [[https://m-hamza.com/](https://m-hamza.com/) ](https://m-hamza-zeta.vercel.app/)(Update this with your final link)
+Live site: [https://m-hamza-zeta.vercel.app/](https://m-hamza-zeta.vercel.app/)
 
 ![Portfolio Preview](public/images/Screenshot%202026-04-28%20at%206.05.59%20PM.png)
 
