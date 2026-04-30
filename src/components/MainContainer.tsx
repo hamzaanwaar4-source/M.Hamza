@@ -1,16 +1,15 @@
 import { lazy, PropsWithChildren, Suspense, useEffect, useState } from "react";
-import About from "./About";
-import Career from "./Career";
-import Contact from "./Contact";
-import Cursor from "./Cursor";
-import Landing from "./Landing";
-import Navbar from "./Navbar";
-import SocialIcons from "./SocialIcons";
-import WhatIDo from "./WhatIDo";
-import Work from "./Work";
-import setSplitText from "./utils/splitText";
-
+const About = lazy(() => import("./About"));
+const Career = lazy(() => import("./Career"));
+const Contact = lazy(() => import("./Contact"));
+const Cursor = lazy(() => import("./Cursor"));
+const Landing = lazy(() => import("./Landing"));
+const Navbar = lazy(() => import("./Navbar"));
+const SocialIcons = lazy(() => import("./SocialIcons"));
+const WhatIDo = lazy(() => import("./WhatIDo"));
+const Work = lazy(() => import("./Work"));
 const TechStack = lazy(() => import("./TechStack"));
+import setSplitText from "./utils/splitText";
 
 const MainContainer = ({ children }: PropsWithChildren) => {
   const [isDesktopView, setIsDesktopView] = useState<boolean>(
@@ -31,24 +30,24 @@ const MainContainer = ({ children }: PropsWithChildren) => {
 
   return (
     <div className="container-main">
-      <Cursor />
-      <Navbar />
-      <SocialIcons />
+      <Suspense fallback={null}>
+        <Cursor />
+        <Navbar />
+        <SocialIcons />
+      </Suspense>
       {isDesktopView && children}
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <div className="container-main">
-            <Landing>{!isDesktopView && children}</Landing>
-            <About />
-            <WhatIDo />
-            <Career />
-            <Work />
-            {isDesktopView && (
-              <Suspense fallback={<div>Loading....</div>}>
-                <TechStack />
-              </Suspense>
-            )}
-            <Contact />
+            <Suspense fallback={<div className="loading-fallback" style={{ height: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#0a0e17", color: "#fff" }}>Loading...</div>}>
+              <Landing>{!isDesktopView && children}</Landing>
+              <About />
+              <WhatIDo />
+              <Career />
+              <Work />
+              {isDesktopView && <TechStack />}
+              <Contact />
+            </Suspense>
           </div>
         </div>
       </div>

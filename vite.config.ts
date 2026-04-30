@@ -15,4 +15,17 @@ export default defineConfig({
       "gsap/ScrollSmoother": path.resolve(__dirname, "src/gsap-bonus/ScrollSmoother"),
     },
   },
+  build: {
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          "three-vendor": ["three", "three-stdlib"],
+          "react-vendor": ["react", "react-dom"],
+          "gsap-vendor": ["gsap", "@gsap/react"],
+          "physics-vendor": ["@react-three/rapier", "@dimforge/rapier3d-compat"],
+        },
+      },
+    },
+  },
 });
