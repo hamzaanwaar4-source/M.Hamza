@@ -9,7 +9,7 @@ const About = () => {
           I'm Muhammad Hamza Anwaar, a Backend Engineer specializing in AI & Voice
           Automation with 14+ months of production experience. I build scalable REST APIs,
           AI pipelines, and distributed systems using Python, FastAPI, and Django.
-          I've shipped 12+ production endpoints and a real-time Workday HR voice bot.
+          I've shipped 12+ production endpoints and a real-time Peoplix AI voice agent.
           My expertise includes LangChain, vector databases (Pinecone/Chroma), and
           RAG pipelines, focused on delivering high-impact autonomous solutions.
         </p>

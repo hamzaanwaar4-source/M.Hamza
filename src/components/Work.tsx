@@ -12,11 +12,11 @@ const projects = [
     link: "https://callhq.ai",
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.jpg",
-    link: "https://whatsapp.callhq.ai",
+    title: "Peoplix AI",
+    category: "Autonomous AI Agents for Enterprise",
+    tools: "AI Agents, Enterprise Operations, Voice & Reasoning",
+    image: "/images/peoplix.jpg",
+    link: "https://peoplix.ai",
   },
   {
     title: "Broki",
